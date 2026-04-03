@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    background-color: rgba(50, 45, 63, 0.815);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center;
+    background: rgba(104, 9, 219, 0.663);
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    gap: 40%;
+}
+#points{
+    cursor: pointer;
+}
+.drop_down_sign{
+    position: relative;
+}
+.drop_content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    width: 160px;
+    padding: 5px;
+    border-radius: 2px;
+    height: 200px;
+
+}
+.drop_down_sign:hover .drop_content{
+    display: flex;
+    flex-direction: column;
+
+}
+form{
+    margin: auto;
+    max-width: 400px;
+  width: 320px;
+  padding: 30px;
+  border-radius: 15px;
+
+  /* IMPORTANT: blur effect */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-top: 100px;
+}
+.select_div{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+#sel1{
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+}
+/* ==========================
+    input text pass email
+=============================*/
+.enter{
+    width: 97%;
+    height: 30px;
+    margin-top: 10px;
+    border-top: none;
+    border-right: none;
+    background-color: rgba(25, 7, 77, 0.36);
+    border-color: blue;
+    border-radius: 2px;
+    border-width: 1px;
+    transition: box-shaodw 0.4s ;
+}
+input[type='button'], input[type='reset']{
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s , transform 0.4s;
+}
+input[type='button']:hover, input[type='reset']:hover{
+    transform: scale(0.9);
+    background-color: greenyellow;
+}
+/*========================
+    result
+============================*/
+.res{
+    margin-top: 20px;
+    text-align: center;
+    font-size: large;
+    text-wrap: wrap;
+    overflow: hidden;
+    width: 400px;
+    height: 100px;
+
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: rgba(104, 9, 219, 0.663);
+    padding: 40px;
+}

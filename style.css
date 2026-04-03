@@ -1,0 +1,197 @@
+
+body{
+    margin: 0;
+    width: 100%;
+}
+/* ============================
+        tandhim header w nav
+=================================*/
+header, nav{
+    display: flex;
+
+}
+header{
+    justify-content: space-between;
+    background-color: rgba(0, 98, 255, 0.811);
+    color: black;
+    padding: 5px;
+    position: fixed;
+    width: 99%;
+    z-index: 10;
+    top: 0;
+}
+nav{
+    justify-content: space-evenly;
+    gap: 50px;
+}
+/* ================================
+           tandhim drop down 
+       =========================*/
+.container{
+    display: inline;
+    position: relative;
+}
+.drop_down{
+    display: none;
+    background-color: beige;
+    width: 100px;
+    padding: 20px;
+    border-radius: 4px;
+}
+.container:hover .drop_down{
+    display: block;
+    position: absolute;
+}
+/*=====================
+        style links
+===========================*/
+a{
+    text-decoration: none;
+    color: black;
+}
+#HOME{
+    text-decoration: underline;
+}
+/*============================
+        sign btn
+==================================*/
+#sign{
+    background-color: rgb(123, 0, 255);
+    width: 70px;
+    border-radius: 4px;
+    height: 30px;
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+#sign:hover{
+    transform: scale(0.9);
+}
+/*============================
+            links
+================================*/
+.links{
+    transition: color 0.4s;
+}
+.links:hover{
+    color: red;
+}
+/*============================
+            SECTION
+      ====================*/
+.sides{
+    margin-top: 70px;
+    top: 70px;
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    padding: 50px 0 40px 0 ;
+    width: 100%;
+}
+.left_side button{
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/*==============================
+            features
+    ==========================*/
+.articles {
+  flex: 3;
+}
+
+.articles article {
+  background: #ddd;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+    background-color: rgb(0, 85, 255);
+    font-weight: 700;
+    cursor: pointer;
+}
+.features{
+    position: absolute;
+    z-index: 1;
+    top: 320px;
+    display: flex;
+    left: 10px;
+    justify-content: space-evenly;
+
+    
+}
+.feature1 , .feature2, .feature3{
+    background-color: azure;
+    border-radius: 6px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.feature1 button , .feature2 button , .feature3 button{
+    width: 100px;
+    height: 20px;
+    background-color: #2d5be3;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.feature1 button:hover , .feature2 button:hover , .feature3 button:hover{
+    transform: scale(1.1);
+}
+
+/*===================
+    article_aside
+==========================*/
+article, aside{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 200px;
+}
+article{
+    width: 70%;
+    background-color: #ccc;
+}
+aside{
+    width: 28%;
+    background-color: #ddd;
+}
+.articles{
+    display: flex;
+    font-size: small;
+    background-color: #eee;
+    border-radius: 8px;
+    
+}
+/*function more*/
+#more{
+    display: flex;
+    font-size: 15px;
+}
+/*======================
+        footer
+==========================*/
+footer{
+    display: flex;
+    width: 97%;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 0;
+    background-color: #2d5be3;
+    padding: 20px;
+    top: 5px;
+}
+.footer_sides{
+    text-align: center;
+}
+@media screen and (max-width :868px){
+    footer{
+        width: 94.1%;
+    }
+}
